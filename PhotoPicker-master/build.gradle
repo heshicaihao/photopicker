@@ -4,6 +4,7 @@ buildscript {
 
     repositories {
         jcenter()
+		mavenCentral()
     }
 
     dependencies {
@@ -31,5 +32,6 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+		maven { url "https://raw.githubusercontent.com/heshicaihao/photopicker/master/PhotoPicker-master"}
     }
 }
