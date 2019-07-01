@@ -38,7 +38,7 @@ ext {
     GITHUB_REPO_PATH = "E:/workspace/photopicker.git/PhotoPicker-master"
     PUBLISH_GROUP_ID = 'com.heshicaihao'
     PUBLISH_ARTIFACT_ID = 'photopicker'
-    PUBLISH_VERSION = '2.0.0'
+    PUBLISH_VERSION = '1.0.0'
 }
 uploadArchives {
     repositories.mavenDeployer {
