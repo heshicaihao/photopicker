@@ -33,7 +33,9 @@ dependencies {
 apply plugin: 'maven'
 ext {
     // 从Github上clone下来的项目的本地地址
-    GITHUB_REPO_PATH = "H:/workspace/PhotoPicker-master"       //这里指定的就是刚刚新建项目后clone下来的在本地的路径
+    //这里指定的就是刚刚新建项目后clone下来的在本地的路径
+//    GITHUB_REPO_PATH = "H:/workspace/PhotoPicker-master"
+    GITHUB_REPO_PATH = "E:/workspace/photopicker.git/PhotoPicker-master"
     PUBLISH_GROUP_ID = 'com.heshicaihao'
     PUBLISH_ARTIFACT_ID = 'photopicker'
     PUBLISH_VERSION = '2.0.0'
