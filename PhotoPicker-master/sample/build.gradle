@@ -35,6 +35,8 @@ dependencies {
     compile 'me.relex:photodraweeview:1.0.0'
 	
 //	compile project(':photopicker')
-    compile 'com.heshicaihao:photopicker:2.0.0'
+    compile 'com.heshicaihao:photopicker:1.0.0'
+//    compile 'com.heshicaihao:photopicker:2.0.0'
+
 	
 }
