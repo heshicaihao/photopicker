@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<cc.dagger.photopicker.view.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.heshicaihao.photopicker.view.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="#343535"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:drawableTop="@drawable/asy"
+        android:drawableTop="@mipmap/asy"
         android:drawablePadding="10dp"
         android:layout_gravity="center"
         android:text="@string/tip_take_photo"
@@ -14,4 +14,4 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-</cc.dagger.photopicker.view.SquareFrameLayout>
+</com.heshicaihao.photopicker.view.SquareFrameLayout>

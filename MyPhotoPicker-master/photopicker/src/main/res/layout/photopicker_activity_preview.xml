@@ -6,7 +6,7 @@
 
     <include layout="@layout/photopicker_toolbar" />
 
-    <cc.dagger.photopicker.view.HackyViewPager
+    <com.heshicaihao.photopicker.view.HackyViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

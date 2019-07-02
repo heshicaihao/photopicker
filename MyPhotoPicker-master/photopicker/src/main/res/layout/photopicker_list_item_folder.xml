@@ -65,7 +65,7 @@
         android:id="@+id/indicator"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="20dp"
-        android:src="@drawable/default_check"
+        android:src="@mipmap/default_check"
         android:layout_gravity="center_vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
