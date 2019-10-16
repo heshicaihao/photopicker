@@ -18,4 +18,6 @@
     <string name="permission_dialog_cancel">拒绝</string>
     <string name="permission_rationale">浏览图片需要您提供浏览存储的权限</string>
     <string name="permission_rationale_write_storage">保存拍照图片需要您提供写存储权限</string>
+    <string name="no_camera_please_install_it">没有相机，请安装相机！</string>
+
 </resources>

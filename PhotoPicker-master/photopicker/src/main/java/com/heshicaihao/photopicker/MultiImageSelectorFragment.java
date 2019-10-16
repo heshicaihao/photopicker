@@ -329,7 +329,7 @@ public class MultiImageSelectorFragment extends Fragment implements OnPhotoGridC
                     Intent intent = captureManager.dispatchTakePictureIntent();
                     startActivityForResult(intent, ImageCaptureManager.REQUEST_TAKE_PHOTO);
                 }else {
-                    Toast.makeText(getActivity(),"没有相机，请安装相机！", Toast.LENGTH_SHORT);
+                    Toast.makeText(getActivity(),getString(R.string.no_camera_please_install_it), Toast.LENGTH_SHORT);
                 }
             } catch (IOException e) {
                 e.printStackTrace();

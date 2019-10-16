@@ -18,4 +18,5 @@
     <string name="permission_dialog_cancel">拒絕</string>
     <string name="permission_rationale">瀏覽圖片需要您提供瀏覽存儲的權限</string>
     <string name="permission_rationale_write_storage">保存拍照圖片需要您提供寫存儲權限</string>
+    <string name="no_camera_please_install_it">沒有相機，請安裝相機！</string>
 </resources>
