@@ -1,2 +1,7 @@
 /PhotoPicker-master/.gradle
 /PhotoPicker-master/photopicker/build
+/PhotoPicker-master/.idea
+/PhotoPicker-master/local.properties
+/PhotoPicker-master/*.iml
+/PhotoPicker-master/sample/*.iml
+/PhotoPicker-master/photopicker/*.iml
