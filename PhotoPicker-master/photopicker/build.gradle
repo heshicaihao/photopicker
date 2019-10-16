@@ -39,7 +39,7 @@ ext {
     GITHUB_REPO_PATH = "E:/Note/maven.git/trunk"
     PUBLISH_GROUP_ID = 'com.heshicaihao'
     PUBLISH_ARTIFACT_ID = 'photopicker'
-    PUBLISH_VERSION = '1.1.23'
+    PUBLISH_VERSION = '1.1.24'
 }
 uploadArchives {
     repositories.mavenDeployer {
