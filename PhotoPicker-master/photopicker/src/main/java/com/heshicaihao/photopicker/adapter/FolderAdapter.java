@@ -86,10 +86,10 @@ public class FolderAdapter extends BaseAdapter {
         }
         if (holder != null) {
             if(i == 0){
-                holder.name.setText(R.string.folder_all);
+                holder.name.setText(R.string.hsc_photopicker_folder_all);
                 holder.path.setText("/sdcard");
                 holder.size.setText(String.format("%d%s",
-                        getTotalImageSize(), mContext.getResources().getString(R.string.photo_unit)));
+                        getTotalImageSize(), mContext.getResources().getString(R.string.hsc_photopicker_photo_unit)));
                 if(mFolders.size() > 0) {
                     Folder f = mFolders.get(0);
                     if (f != null && PhotoPicker.getInstance() != null) {
@@ -169,9 +169,9 @@ public class FolderAdapter extends BaseAdapter {
             name.setText(data.name);
             path.setText(data.path);
             if (data.images != null) {
-                size.setText(String.format("%d%s", data.images.size(), mContext.getResources().getString(R.string.photo_unit)));
+                size.setText(String.format("%d%s", data.images.size(), mContext.getResources().getString(R.string.hsc_photopicker_photo_unit)));
             }else{
-                size.setText("*"+mContext.getResources().getString(R.string.photo_unit));
+                size.setText("*"+mContext.getResources().getString(R.string.hsc_photopicker_photo_unit));
             }
             if (data.cover != null && PhotoPicker.getInstance() != null) {
                 PhotoPicker.getInstance().getImageLoader()

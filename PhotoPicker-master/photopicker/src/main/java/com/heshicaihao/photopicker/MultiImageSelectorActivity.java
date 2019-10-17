@@ -120,8 +120,8 @@ public class MultiImageSelectorActivity extends AppCompatActivity
         }
 
         menuItemDone.setVisible(resultList.size() > 0);
-        menuItemDone.setTitle(getString(R.string.action_button_string,
-                getString(R.string.action_done), resultList.size(), mDefaultCount));
+        menuItemDone.setTitle(getString(R.string.hsc_photopicker_action_button_string,
+                getString(R.string.hsc_photopicker_action_done), resultList.size(), mDefaultCount));
     }
 
     @Override

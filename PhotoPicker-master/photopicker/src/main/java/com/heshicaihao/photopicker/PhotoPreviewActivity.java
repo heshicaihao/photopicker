@@ -88,7 +88,7 @@ public class PhotoPreviewActivity extends PreviewBaseActivity {
     @SuppressLint("StringFormatMatches")
     @Override
     public void updateTitle() {
-        getSupportActionBar().setTitle(getString(R.string.action_string_preview,
+        getSupportActionBar().setTitle(getString(R.string.hsc_photopicker_action_string_preview,
                 mViewPager.getCurrentItem() + 1, paths.size()));
     }
 
@@ -98,15 +98,15 @@ public class PhotoPreviewActivity extends PreviewBaseActivity {
 
         if (paths.size() == 1) {
             new AlertDialog.Builder(this)
-                    .setMessage(getString(R.string.tip_delete))
-                    .setPositiveButton(getString(R.string.photo_delete_ok), new DialogInterface.OnClickListener() {
+                    .setMessage(getString(R.string.hsc_photopicker_tip_delete))
+                    .setPositiveButton(getString(R.string.hsc_photopicker_photo_delete_ok), new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             paths.remove(index);
                             back();
                         }
                     })
-                    .setNegativeButton(getString(R.string.photo_delete_cancel), null)
+                    .setNegativeButton(getString(R.string.hsc_photopicker_photo_delete_cancel), null)
                     .show();
 
         } else {

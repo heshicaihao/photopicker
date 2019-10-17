@@ -34,7 +34,7 @@ public class PhotoSelectBuilder extends Builder{
     public void start(Activity aty, int enterAnim, int exitAnim) {
 
         if(!hasPermission(aty)) {
-            Toast.makeText(aty, R.string.error_no_permission, Toast.LENGTH_SHORT).show();
+            Toast.makeText(aty, R.string.hsc_photopicker_error_no_permission, Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -45,7 +45,7 @@ public class PhotoSelectBuilder extends Builder{
     @Override
     public void start(Fragment fragment, int enterAnim, int exitAnim) {
         if(!hasPermission(fragment.getActivity())) {
-            Toast.makeText(fragment.getActivity(), R.string.error_no_permission, Toast.LENGTH_SHORT).show();
+            Toast.makeText(fragment.getActivity(), R.string.hsc_photopicker_error_no_permission, Toast.LENGTH_SHORT).show();
             return;
         }
 

@@ -98,7 +98,7 @@ public abstract class PreviewBaseActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        menuItemDelete = menu.add(Menu.NONE, menuItemDeleteId, 0, getString(R.string.delete));
+        menuItemDelete = menu.add(Menu.NONE, menuItemDeleteId, 0, getString(R.string.hsc_photopicker_delete));
         menuItemDelete.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
         return true;
     }

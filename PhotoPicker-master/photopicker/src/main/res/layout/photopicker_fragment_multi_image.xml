@@ -47,7 +47,7 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="4dp"
             android:background="@null"
-            android:text="@string/preview"
+            android:text="@string/hsc_photopicker_preview"
             android:visibility="gone"
             android:enabled="false"
             android:textColor="@color/folder_text_color"

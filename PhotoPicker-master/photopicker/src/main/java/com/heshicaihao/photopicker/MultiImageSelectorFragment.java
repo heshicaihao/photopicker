@@ -145,7 +145,7 @@ public class MultiImageSelectorFragment extends Fragment implements OnPhotoGridC
             refreshPreviewButtonState(resultList);
         }
 
-        mCategoryText.setText(R.string.folder_all);
+        mCategoryText.setText(R.string.hsc_photopicker_folder_all);
         mCategoryText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -226,7 +226,7 @@ public class MultiImageSelectorFragment extends Fragment implements OnPhotoGridC
 
                         if (index == 0) {
                             getActivity().getSupportLoaderManager().restartLoader(0, null, mLoaderCallback);
-                            mCategoryText.setText(R.string.folder_all);
+                            mCategoryText.setText(R.string.hsc_photopicker_folder_all);
                             photoGridAdapter.setShowCamera(pickerParams.showCamera);
                         } else {
                             Folder folder = (Folder) v.getAdapter().getItem(index);
@@ -312,7 +312,7 @@ public class MultiImageSelectorFragment extends Fragment implements OnPhotoGridC
 
         if(pickerParams.mode == SelectMode.MULTI) {
             if (resultList.size() >= pickerParams.maxPickSize) {
-                Toast.makeText(getActivity(), R.string.msg_amount_limit, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), R.string.hsc_photopicker_msg_amount_limit, Toast.LENGTH_SHORT).show();
                 return;
             }
         }
@@ -320,7 +320,7 @@ public class MultiImageSelectorFragment extends Fragment implements OnPhotoGridC
         if(ContextCompat.checkSelfPermission(getContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED){
             requestPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                    getString(R.string.permission_rationale_write_storage),
+                    getString(R.string.hsc_photopicker_permission_rationale_write_storage),
                     REQUEST_STORAGE_WRITE_ACCESS_PERMISSION);
         }else {
             try {
@@ -329,11 +329,11 @@ public class MultiImageSelectorFragment extends Fragment implements OnPhotoGridC
                     Intent intent = captureManager.dispatchTakePictureIntent();
                     startActivityForResult(intent, ImageCaptureManager.REQUEST_TAKE_PHOTO);
                 }else {
-                    Toast.makeText(getActivity(),getString(R.string.no_camera_please_install_it), Toast.LENGTH_SHORT);
+                    Toast.makeText(getActivity(),getString(R.string.hsc_photopicker_no_camera_please_install_it), Toast.LENGTH_SHORT);
                 }
             } catch (IOException e) {
                 e.printStackTrace();
-                Toast.makeText(getActivity(), R.string.start_camera_error, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), R.string.hsc_photopicker_start_camera_error, Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -341,15 +341,15 @@ public class MultiImageSelectorFragment extends Fragment implements OnPhotoGridC
     private void requestPermission(final String permission, String rationale, final int requestCode){
         if(shouldShowRequestPermissionRationale(permission)){
             new AlertDialog.Builder(getContext())
-                    .setTitle(R.string.permission_dialog_title)
+                    .setTitle(R.string.hsc_photopicker_permission_dialog_title)
                     .setMessage(rationale)
-                    .setPositiveButton(R.string.permission_dialog_ok, new DialogInterface.OnClickListener() {
+                    .setPositiveButton(R.string.hsc_photopicker_permission_dialog_ok, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             requestPermissions(new String[]{permission}, requestCode);
                         }
                     })
-                    .setNegativeButton(R.string.permission_dialog_cancel, null)
+                    .setNegativeButton(R.string.hsc_photopicker_permission_dialog_cancel, null)
                     .create().show();
         }else{
             requestPermissions(new String[]{permission}, requestCode);
@@ -381,7 +381,7 @@ public class MultiImageSelectorFragment extends Fragment implements OnPhotoGridC
                     }
                 } else {
                     if(pickerParams.maxPickSize == resultList.size()){
-                        Toast.makeText(getActivity(), R.string.msg_amount_limit, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), R.string.hsc_photopicker_msg_amount_limit, Toast.LENGTH_SHORT).show();
                         return;
                     }
                     resultList.add(image.path);
@@ -400,7 +400,7 @@ public class MultiImageSelectorFragment extends Fragment implements OnPhotoGridC
     }
 
     private void refreshPreviewButtonState(ArrayList<String> resultList){
-        String text = getString(R.string.preview);
+        String text = getString(R.string.hsc_photopicker_preview);
         if(resultList.size() > 0) {
             text += "(" + resultList.size() + ")";
         }
